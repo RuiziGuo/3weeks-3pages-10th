@@ -1,101 +1,75 @@
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 12pt;
+  width: 100%;
+  margin:0px;
 }
 
 .header{
-  width: 1440px;
-  height: 69px;
+  height: 77px;
   overflow: hidden;
   color: #6a6a6a;
 }
-
 .headerTheme{
-  width:200px;
-  margin-top: 11px;
-  margin-left: 160px;
-  font-size: 21pt;
   float: left;
+  margin-top: 18px;
+  margin-left: 166px;
+  font-size: 21pt;
 }
-
-.navigationNar
+.navigationBar
 {
-  width: 500px;
   float: right;
-  margin-top: 6px;
-  margin-right: 42px;
-}
-.headerButton{
-  list-style: none;
+  margin-top: 17px;
+  margin-right: 110px;
+  font-size: 10pt;
 }
 .headerButton li{
   float: left;
   display: block;
-  padding-right: 26px;
   text-align: center;
-  font-size: 10pt;
+  padding-right: 26px;
 }
-
 .headerButton li:last-child{
   width: 76px;
+  height: 15px;
   background: url(../assert/week1/search-icon.png) no-repeat center;
   background-size: 55%;
-  height: 15px;
 }
+
 .partOne{
-  margin-left: -9px;
-}
-
-.week1Header{
-  width: 1440px;
-  height: 85px;
-  background-color:#fff;
-  color: #666;
-  font-size: 30px;
-}
-
-.image1{
-  width: 1440px;
   height: 703px;
   background: url(../assert/week1/hero.jpg) no-repeat center;
   background-size: 100% 100%;
   overflow: hidden;
 }
-
 div.partOneText{
   text-align: center;
   color: #fff;
-  margin: 255px;
+  margin: 250px;
 }
-
 .partOneFirstMessage{
   font-size: 55px;
 }
-
 .partOneMessage{
   margin: 25px;
 }
-
 input{
-  text-align: center;
   width: 200px;
   height: 55px;
+  text-align: center;
   margin: 10px 2px;
   color: #fff;
 }
-
 .leftButton{
   background-color: transparent;
   border: 2px solid #fff;
 }
-
 .rightButton{
   background-color: #7462f5;
   border: none;
 }
 
 .partTwo{
-  width: 1440px;
   height: 722px;
   overflow: hidden;
 }
@@ -103,54 +77,39 @@ input{
   width: 931px;
   height: 722px;
   background: url(../assert/week1/flexible-preview.png) no-repeat center;
-  background-size:70% 63%;
+  background-size:69% 63%;
   float: left;
   margin-top:40px;
 }
-
 .partTwoText{
   color: black;
   text-align: left;
-  margin-top: 248px;
+  margin-top: 244px;
   padding-right: 150px;
 }
-.partTwoFirstMessage{
+.partTwoThreeFirstMessage{
   font-size: 24pt;
 }
-
-.partTwoDetailMessage{
-  margin: 20px;
+.partTwoThreeDetailMessage{
+  margin-top: 22px;
+  margin-bottom: 22px;
   line-height: 1.5;
   color: #6a6a6a;
 }
 
 .partThree{
   background: #f5f5f5;
-  width: 1440px;
   height: 647px;
   overflow: hidden;
 }
-
 .partThreeText{
+  width: 349px;
   color: black;
   text-align: left;
   margin-top: 178px;
   padding-left: 150px;
-  width: 349px;
   float: left;
 }
-
-.partThreeFirstMessage{
-  font-size: 24pt;
-}
-
-.partThreeDetailMessage{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 1.5;
-  color: #6a6a6a;
-}
-
 .image3{
   width: 940px;
   height: 647px;
@@ -160,21 +119,16 @@ input{
 }
 
 .pageFooter{
-  width: 1440px;
   height: 180px;
   background-color: #0e1015;
   color: #fff;
   overflow: hidden;
-  margin-left: -8px;
 }
-
 .footerMessage{
-  width: 600px;
-  text-align: center;
-  margin-top: 90px;
+  margin-top: 89px;
+  margin-left: 150px;
   float: left;
 }
-
 .footerIcon{
   list-style: none;
   width: 300px;
@@ -182,7 +136,6 @@ input{
   display: block;
   float: right;
 }
-
 .footerIcon li{
   display:block;
   float: left;
@@ -191,27 +144,22 @@ input{
   width: 10px;
   height: 23px;
 }
-
 .previous{
   background: url(../assert/week1/previous.ico) no-repeat center;
   background-size: 100%;
 }
-
 .play{
   background: url(../assert/week1/play.ico) no-repeat center;
   background-size: 100%;
 }
-
 .pause{
   background: url(../assert/week1/pause.ico) no-repeat center;
   background-size: 100%;
 }
-
 .next{
   background: url(../assert/week1/next.ico) no-repeat center;
   background-size: 100%;
 }
-
 .refresh{
   background: url(../assert/week1/refresh.ico) no-repeat center;
   background-size: 100%;
