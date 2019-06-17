@@ -29,6 +29,9 @@ body{
   text-align: center;
   padding-right: 26px;
 }
+.headerButton a:link{
+  text-decoration:none;
+}
 .headerButton li:last-child{
   width: 76px;
   height: 15px;
