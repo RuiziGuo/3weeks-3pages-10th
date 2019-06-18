@@ -52,6 +52,7 @@ div.partOneText{
 }
 .partOneFirstMessage{
   font-size: 55px;
+  letter-spacing:7px;
 }
 .partOneMessage{
   margin: 25px;
