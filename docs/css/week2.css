@@ -1,3 +1,703 @@
-h1 {
-  color: blue;
+body{
+  margin: 0 14%;
+}
+
+/* nav part */
+header ul{
+  list-style-type: none;
+  font-size: 9pt;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-inline-start: 0;
+}
+.nav_test{
+  display: block;
+  flex-flow: column-reverse nowrap;
+}
+.nav_icon, .nav_link{
+  display: flex;
+  flex-direction: column;
+}
+.nav_link ul{
+  padding-bottom:18px;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+.nav_logo{
+  background: url(../assert/week2/logo.png) no-repeat center;
+  background-size: 36%;
+  height:130px;
+  margin: 0 auto;
+}
+.nav_link a, .story_msm a{
+  color:#34ac98;
+}
+.nav_link a:link{
+  text-decoration:none;
+}
+
+/* doesn't display for small screen */
+.nav_message{
+  color: black;
+  font-size: 10pt;
+  padding-left:18px;
+}
+
+.nav_message p{
+  line-height: 2;
+}
+.nav_message .title{
+  font-size: 12pt;
+  border-bottom: 1px dashed;
+  padding-bottom: 7px;
+  margin-top: 61px;
+}
+.nav_message button{
+  height: 36px;
+  border-radius:8px;
+  font-size: 7pt;
+  font-family: monospace;
+  color:#34ac98;
+  padding: 10px;
+}
+
+/*banner part*/
+.banner{
+  background: url(../assert/week2/foodsense.jpg) no-repeat top;
+  background-size: 155%;
+  height:262px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content:flex-end;
+}
+
+.banner_sms_1{
+  background-color: white;
+  color: black;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 9px;
+  font-size: 10pt;
+  font-style: italic;
+}
+.banner_sms_2{
+  background-color:#111111;
+  color: white;
+  padding: 8px;
+  font-size: 7pt;
+  font-style: italic;
+}
+.banner_img_mark{
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+  font-size: 6pt;
+}
+
+/* signup part*/
+.signup_sub{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.signup_email_msm{
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 13px 0;
+}
+.signup_email_icon{
+  background:url(../assert/week2/email.png) no-repeat top;
+  background-size: 90%;
+  width: 40%;
+}
+.signup_message{
+  font-size: 8pt;
+  padding-left:5px; 
+}
+.signup_email{
+  display: inline-flex;
+  padding-left: 5%;
+}
+.signup_email input{
+  border: 1px solid;
+  border-color: gray;
+}
+.signup_email [type='text']{
+  color: gray;
+  font-size: 9pt;
+  width: 51%;
+  margin-right: 10px;
+}
+.signup_email [type='submit']{
+  background-color: #e5e5e5;
+  font-weight: bold;
+  color: black;
+  border-radius:5px;
+  font-size: 8pt;
+  width: 26.5%;
+}
+
+/* story part*/
+.stories{
+  margin: 25px 22px 0;
+}
+.story{
+  height:160px;
+}
+.story_img_1{
+  background: url(../assert/week2/1.jpg) no-repeat center;
+  background-size: 93%;
+  border: 1px solid #e4e0e0;
+}
+.story_img_2{
+  background: url(../assert/week2/2.jpg) no-repeat center;
+  background-size: 93%;
+  border: 1px solid #e4e0e0;
+}
+.story_img_3{
+  background: url(../assert/week2/3.jpg) no-repeat center;
+  background-size: 93%;
+  border: 1px solid #e4e0e0;
+}
+.story_img_4{
+  background: url(../assert/week2/4.jpg) no-repeat center;
+  background-size: 93%;
+  border: 1px solid #e4e0e0;
+}
+
+.story_msm span:first-child{
+  color: #34ac98;
+  font-size: 11pt;
+}
+.story_msm p{
+  font-size: 11pt;
+  margin-block-start: 9px;
+  line-height: 1.2;
+  margin-block-end:5px;
+}
+.story_msm{
+  padding-top: 10px;
+  padding-bottom: 19px;
+}
+
+.story_msm span:last-child{
+  color: gray;
+  font-size: 10pt;
+}
+
+.story_msm a:link{
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.body_header_main{
+  border-bottom: 2px solid gray;
+}
+
+/* footer part */
+footer{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 100px;
+  margin-top: 24px;
+}
+.footer_message{
+  width: 50%;
+  font-size: 11pt;
+}
+.footer_message p:first-child{
+  color: #34ac98;
+  margin:0;
+}
+.footer_message p:last-child{
+  margin-top: 3px;
+}
+footer ul{
+  list-style-type: none;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+footer li{
+  width: 35px;
+  height: 35px;
+  padding-left: 10px;
+}
+footer li:first-child{
+  background: url(../assert/week2/6.ico) no-repeat center;
+  background-size: 85%;
+}
+footer li:nth-child(2){
+  background: url(../assert/week2/7.ico) no-repeat center;
+  background-size: 85%;
+}
+footer li:nth-child(3){
+  background: url(../assert/week2/8.ico) no-repeat center;
+  background-size: 85%;
+}
+
+
+/* width part */
+
+@media screen and (max-width:414px){
+  .nav_icon, .nav_message, .signup_nav{
+    display: none;
+  }
+  .nav_link ul{
+    border-bottom: 1px outset;
+    border-bottom-color: gray; 
+  }
+  .signup_email{
+    padding-bottom: 15px;
+  }
+  .signup_sub{
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+  }
+  .footer_message{
+    font-size: 6pt;
+  }
+  footer li{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+  }
+  footer li:first-child{
+    background: url(../assert/week2/6.ico) no-repeat center;
+    background-size: 70%;
+  }
+  footer li:nth-child(2){
+    background: url(../assert/week2/7.ico) no-repeat center;
+    background-size: 70%;
+  }
+  footer li:nth-child(3){
+    background: url(../assert/week2/8.ico) no-repeat center;
+    background-size: 70%;
+  }
+}
+
+@media screen and (min-width:415px) and (max-width:1280px){
+  body{
+    margin: 0 10%;
+  }
+  .nav_message{
+    display: none;
+  }
+  .nav_test{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .nav_logo{
+    background: url(../assert/week2/logo.png) no-repeat left;
+    background-size: 44%;
+    height:180px;
+    width: 42%;
+    margin: 0;
+  }
+  .nav{
+    padding: 37px 0;
+    width: 70%;
+  }
+  .nav_icon ul, .nav_link ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .nav_icon li{
+    width: 100%;
+    height: 70px;
+  }
+  .nav_link li{
+    width: 100%;
+    text-align: center;
+    font-size: 15pt;
+  }
+
+  .nav_icon li:first-child{
+    background: url(../assert/week2/1.png) no-repeat center;
+    background-size: 70%;
+  }
+  .nav_icon li:nth-child(2){
+    background: url(../assert/week2/2.png) no-repeat center;
+    background-size: 70%;
+  }
+  .nav_icon li:nth-child(3){
+    background: url(../assert/week2/3.png) no-repeat center;
+    background-size: 70%;
+  }
+  .nav_icon li:nth-child(4){
+    background: url(../assert/week2/4.png) no-repeat center;
+    background-size: 70%;
+  }
+  .nav_icon li:last-child{
+    background: url(../assert/week2/5.png) no-repeat center;
+    background-size: 70%;
+  }
+
+/* banner part */
+  .banner{
+    background: url(../assert/week2/foodsense.jpg) no-repeat top;
+    background-size: 127%;
+    height: 515px;
+  }
+  .banner_sms_1 {
+    padding-bottom: 14px;
+    padding-left: 16px;
+    font-size: 22pt;
+    width: 250px;
+  }
+  .banner_sms_2{
+    padding: 13px;
+    font-size: 15pt;
+    font-style: italic;
+    width: 463px;
+  }
+  .banner_img_mark{
+    margin-top: 37px;
+    padding: 8px;
+  }
+  .banner_img_mark span{
+    display: block;
+    background: rgb(237, 237, 237,0.6);
+    padding: 5px;
+    border-radius:5px;
+    font-size: 9pt;
+  }
+
+  /* signup part */
+  .signup_nav p{
+    display: none;
+  }
+  .signup_nav{
+    display: table;
+    font-size: 13pt;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .signup_nav div{
+    border-left: 1px solid #fafafa;
+    display: table-cell;
+    width: 25%;
+    text-align: center;
+    color: #34ac98;
+    padding: 8px 0;
+    background-color: #eff8f7;
+  }
+  .signup_nav div:nth-child(2){
+    background-color: #d9efec;
+  }
+  .signup_nav span{
+    font-size: 14pt;
+  }
+  .signup_sub{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 35px;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+  }
+  .signup_email_icon{
+    background:url(../assert/week2/email.png) no-repeat top;
+    background-size: 55%;
+    width: 12%;
+  }
+  .signup_message {
+    font-size: 11pt;
+    width: 77%;
+  }
+  .signup_email{
+    width: 55%;
+    padding: 14px 16px 19px 0;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .signup_email [type='text']{
+    width: 60.5%;
+  }
+  .signup_email [type='submit']{
+    width: 32.5%;
+  }
+
+  /* story part */
+  .stories{
+    display: flex;
+    margin: 34px 0;
+  }
+  .stories div{
+    width: 100%;
+  }
+  .story{
+    height: 130px;
+    margin: 0;
+  }
+  .stories .story_sub:nth-child(2){
+    padding-left: 24px;
+    padding-right: 13px;
+  }
+  .stories .story_sub:nth-child(3){
+    padding-left: 13px;
+    padding-right: 26px;
+  }
+  .story_img_1{
+    background: url(../assert/week2/1.jpg) no-repeat center;
+    background-size: 88%;
+    border: 0.1px solid #e4e0e0;
+  }
+  .story_img_2{
+    background: url(../assert/week2/2.jpg) no-repeat center;
+    background-size: 88%;
+    border: 0.1px solid #e4e0e0;
+  }
+  .story_img_3{
+    background: url(../assert/week2/3.jpg) no-repeat center;
+    background-size: 88%;
+    border: 0.1px solid #e4e0e0;
+  }
+  .story_img_4{
+    background: url(../assert/week2/4.jpg) no-repeat center;
+    background-size: 88%;
+    border: 0.1px solid #e4e0e0;
+  }
+  .story_msm{
+    margin: 9px 0;
+  }
+  .story_msm span:first-child{
+    font-size: 15pt;
+  }
+  .story_msm p{
+    font-size: 14pt;
+    margin-block-start: 12px;
+    line-height: 1.25;
+  }
+  .story_msm span:last-child{
+    font-size: 12pt;
+  }
+}
+
+@media screen and (min-width:1281px){
+  body{
+    margin: 0 13%;
+    margin-top: 56px;
+  }
+  .body_header_main{
+    display: flex;
+    width:100%;
+    border-bottom: 2px solid gray;
+  }
+  header{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-start;
+    width:14.5%;
+    padding-right: 3.5%;
+  }
+  main{
+    width:82%;
+  }
+  .nav_test{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .nav{
+    display: flex;
+    flex-flow: row;
+    flex-grow: 0.57;
+  }
+  .nav_icon{
+    width: 30%;
+  }
+  .nav_link{
+    width: 50%;
+  }
+  .nav_icon ul, .nav_link ul{
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .nav_link li{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header li{
+    font-size: 16pt;
+    height: 20%;
+  }
+  .nav_icon li:first-child{
+    background: url(../assert/week2/1.png) no-repeat center;
+    background-size: 100%;
+  }
+  .nav_icon li:nth-child(2){
+    background: url(../assert/week2/2.png) no-repeat center;
+    background-size: 100%;
+  }
+  .nav_icon li:nth-child(3){
+    background: url(../assert/week2/3.png) no-repeat center;
+    background-size: 100%;
+  }
+  .nav_icon li:nth-child(4){
+    background: url(../assert/week2/4.png) no-repeat center;
+    background-size: 100%;
+  }
+  .nav_icon li:last-child{
+    background: url(../assert/week2/5.png) no-repeat center;
+    background-size: 100%;
+  }
+  .nav_logo{
+    background: url(../assert/week2/logo.png) no-repeat top;
+    background-size: 74%;
+    height:180px;
+    width: 100%;
+  }
+
+  /* banner part */
+  .banner{
+    background: url(../assert/week2/foodsense.jpg) no-repeat top;
+    background-size: 100%;
+    height: 543px;
+  }
+  .banner_sms_1{
+    padding-bottom: 16px;
+    padding-left: 27px;
+    font-size: 22pt;
+    width: 258px;
+  }
+  .banner_sms_2{
+    padding: 13px 0 13px 27px;
+    font-size: 15pt;
+    font-style: italic;
+    width: 490px;
+  }
+  .banner_img_mark{
+    margin-top: 37px;
+    padding: 13px;
+  }
+  .banner_img_mark span{
+    display: block;
+    background: rgb(237, 237, 237,0.6);
+    padding: 5px;
+    border-radius:5px;
+    font-size: 9pt;
+  }
+
+  /* signup part*/
+  .signup_nav{
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .signup_nav div{
+    border-left: 1px solid #fafafa;
+    display: table-cell;
+    width: 25%;
+    text-align: left;
+    color: #34ac98;
+    padding:30px 22px;
+    background-color: #eff8f7;
+  }
+  .signup_nav div:nth-child(2){
+    background-color: #d9efec;
+  }
+  .signup_nav span{
+    font-size: 17pt;
+  }
+  .signup_nav p{
+    margin-block-start:0;
+    margin-block-end:0;
+    font-size: 12pt;
+  }
+  .signup_sub{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 35px;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+  }
+  .signup_email_icon{
+    background:url(../assert/week2/email.png) no-repeat top;
+    background-size: 50%;
+    width: 12%;
+  }
+  .signup_message {
+    font-size: 11pt;
+    width: 80%;
+  }
+  .signup_email{
+    width: 46%;
+    padding: 14px 16px 19px 0;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .signup_email [type='text']{
+    width: 72.5%;
+  }
+  .signup_email [type='submit']{
+    width: 22.5%;
+  }
+
+  /* story part */
+  .stories{
+    display: flex;
+    margin: 37px 0;
+  }
+  .stories div{
+    width: 100%;
+  }
+  .story{
+    height: 172px;
+    margin: 0;
+  }
+  .stories .story_sub:nth-child(2){
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+  .stories .story_sub:nth-child(3){
+    padding-left: 15px;
+    padding-right: 30px;
+  }
+  .story_img_1{
+    background: url(../assert/week2/1.jpg) no-repeat center;
+    background-size: 90%;
+    border: 0.1px solid #e4e0e0;
+  }
+  .story_img_2{
+    background: url(../assert/week2/2.jpg) no-repeat center;
+    background-size: 90%;
+    border: 0.1px solid #e4e0e0;
+  }
+  .story_img_3{
+    background: url(../assert/week2/3.jpg) no-repeat center;
+    background-size: 90%;
+    border: 0.1px solid #e4e0e0;
+  }
+  .story_img_4{
+    background: url(../assert/week2/4.jpg) no-repeat center;
+    background-size: 90%;
+    border: 0.1px solid #e4e0e0;
+  }
+
+  .story_msm{
+    margin: 16px 0;
+    padding: 0;
+  }
+  .story_msm span:first-child{
+    font-size: 16pt;
+  }
+  .story_msm p{
+    font-size: 14pt;
+    margin-block-start: 12px;
+    line-height: 1.3;
+    margin-block-end: 18px;
+  }
+  .story_msm span:last-child{
+    font-size: 13pt;
+  }
 }
