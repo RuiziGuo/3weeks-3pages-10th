@@ -1,19 +1,20 @@
 body{
   margin: 0 14%;
+  margin-top: 14px;
 }
 
-/* nav part */
+/* header part */
+.nav_test{
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
 header ul{
   list-style-type: none;
   font-size: 9pt;
+  padding-inline-start: 0;
   display: inline-flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  padding-inline-start: 0;
-}
-.nav_test{
-  display: block;
-  flex-flow: column-reverse nowrap;
 }
 .nav_icon, .nav_link{
   display: flex;
@@ -21,7 +22,6 @@ header ul{
 }
 .nav_link ul{
   padding-bottom:18px;
-  margin-top: 14px;
   margin-bottom: 0;
 }
 .nav_logo{
@@ -29,6 +29,7 @@ header ul{
   background-size: 36%;
   height:130px;
   margin: 0 auto;
+  width: 100%;
 }
 .nav_link a, .story_msm a{
   color:#34ac98;
@@ -37,32 +38,7 @@ header ul{
   text-decoration:none;
 }
 
-/* doesn't display for small screen */
-.nav_message{
-  color: black;
-  font-size: 10pt;
-  padding-left:18px;
-}
-
-.nav_message p{
-  line-height: 2;
-}
-.nav_message .title{
-  font-size: 12pt;
-  border-bottom: 1px dashed;
-  padding-bottom: 7px;
-  margin-top: 61px;
-}
-.nav_message button{
-  height: 36px;
-  border-radius:8px;
-  font-size: 7pt;
-  font-family: monospace;
-  color:#34ac98;
-  padding: 10px;
-}
-
-/*banner part*/
+/* banner part */
 .banner{
   background: url(../assert/week2/foodsense.jpg) no-repeat top;
   background-size: 155%;
@@ -72,7 +48,6 @@ header ul{
   flex-flow: column nowrap;
   justify-content:flex-end;
 }
-
 .banner_sms_1{
   background-color: white;
   color: black;
@@ -96,10 +71,27 @@ header ul{
   font-size: 6pt;
 }
 
-/* signup part*/
+/* signup part */
 .signup_sub{
   display: flex;
   flex-flow: column nowrap;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+}
+.signup_nav{
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+}
+.signup_nav div{
+  border-left: 1px solid #fafafa;
+  display: table-cell;
+  width: 25%;
+  color: #34ac98;
+  background-color: #eff8f7;
+}
+.signup_nav div:nth-child(2){
+  background-color: #d9efec;
 }
 .signup_email_msm{
   display: flex;
@@ -116,8 +108,7 @@ header ul{
   padding-left:5px; 
 }
 .signup_email{
-  display: inline-flex;
-  padding-left: 5%;
+  padding: 0 0 15px 14px;
 }
 .signup_email input{
   border: 1px solid;
@@ -138,7 +129,7 @@ header ul{
   width: 26.5%;
 }
 
-/* story part*/
+/* story part */
 .stories{
   margin: 25px 22px 0;
 }
@@ -165,7 +156,6 @@ header ul{
   background-size: 93%;
   border: 1px solid #e4e0e0;
 }
-
 .story_msm span:first-child{
   color: #34ac98;
   font-size: 11pt;
@@ -180,17 +170,14 @@ header ul{
   padding-top: 10px;
   padding-bottom: 19px;
 }
-
 .story_msm span:last-child{
   color: gray;
   font-size: 10pt;
 }
-
 .story_msm a:link{
   text-decoration: none;
   border-bottom: 1px dashed;
 }
-
 .body_header_main{
   border-bottom: 2px solid gray;
 }
@@ -200,11 +187,10 @@ footer{
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  height: 100px;
+  height: 80px;
   margin-top: 24px;
 }
 .footer_message{
-  width: 50%;
   font-size: 11pt;
 }
 .footer_message p:first-child{
@@ -240,9 +226,7 @@ footer li:nth-child(3){
   background-size: 85%;
 }
 
-
 /* width part */
-
 @media screen and (max-width:414px){
   .nav_icon, .nav_message, .signup_nav{
     display: none;
@@ -250,13 +234,6 @@ footer li:nth-child(3){
   .nav_link ul{
     border-bottom: 1px outset;
     border-bottom-color: gray; 
-  }
-  .signup_email{
-    padding-bottom: 15px;
-  }
-  .signup_sub{
-    border-top: 1px dashed black;
-    border-bottom: 1px dashed black;
   }
   .footer_message{
     font-size: 6pt;
@@ -284,9 +261,11 @@ footer li:nth-child(3){
   body{
     margin: 0 10%;
   }
-  .nav_message{
+  .signup_nav p, .nav_message{
     display: none;
   }
+
+  /* header part */
   .nav_test{
     display: flex;
     flex-flow: row nowrap;
@@ -315,7 +294,6 @@ footer li:nth-child(3){
     text-align: center;
     font-size: 15pt;
   }
-
   .nav_icon li:first-child{
     background: url(../assert/week2/1.png) no-repeat center;
     background-size: 70%;
@@ -343,7 +321,7 @@ footer li:nth-child(3){
     background-size: 127%;
     height: 515px;
   }
-  .banner_sms_1 {
+  .banner_sms_1{
     padding-bottom: 14px;
     padding-left: 16px;
     font-size: 22pt;
@@ -368,26 +346,10 @@ footer li:nth-child(3){
   }
 
   /* signup part */
-  .signup_nav p{
-    display: none;
-  }
-  .signup_nav{
-    display: table;
-    font-size: 13pt;
-    margin: 0 auto;
-    width: 100%;
-  }
   .signup_nav div{
-    border-left: 1px solid #fafafa;
-    display: table-cell;
-    width: 25%;
+    font-size: 13pt;
     text-align: center;
-    color: #34ac98;
     padding: 8px 0;
-    background-color: #eff8f7;
-  }
-  .signup_nav div:nth-child(2){
-    background-color: #d9efec;
   }
   .signup_nav span{
     font-size: 14pt;
@@ -396,15 +358,13 @@ footer li:nth-child(3){
     display: flex;
     flex-flow: row nowrap;
     margin-top: 35px;
-    border-top: 1px dashed black;
-    border-bottom: 1px dashed black;
   }
   .signup_email_icon{
     background:url(../assert/week2/email.png) no-repeat top;
     background-size: 55%;
     width: 12%;
   }
-  .signup_message {
+  .signup_message{
     font-size: 11pt;
     width: 77%;
   }
@@ -482,6 +442,8 @@ footer li:nth-child(3){
     margin: 0 13%;
     margin-top: 56px;
   }
+
+  /* header part */
   .body_header_main{
     display: flex;
     width:100%;
@@ -497,6 +459,12 @@ footer li:nth-child(3){
   main{
     width:82%;
   }
+  .nav_logo{
+    background: url(../assert/week2/logo.png) no-repeat top;
+    background-size: 74%;
+    height:180px;
+    width: 100%;
+  }
   .nav_test{
     display: flex;
     flex-flow: column;
@@ -505,14 +473,8 @@ footer li:nth-child(3){
   }
   .nav{
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     flex-grow: 0.57;
-  }
-  .nav_icon{
-    width: 30%;
-  }
-  .nav_link{
-    width: 50%;
   }
   .nav_icon ul, .nav_link ul{
     display: inline-flex;
@@ -521,6 +483,12 @@ footer li:nth-child(3){
     height: 100%;
     padding: 0;
     margin: 0;
+  }
+  .nav_icon{
+    width: 30%;
+  }
+  .nav_link{
+    width: 50%;
   }
   .nav_link li{
     display:flex;
@@ -551,11 +519,27 @@ footer li:nth-child(3){
     background: url(../assert/week2/5.png) no-repeat center;
     background-size: 100%;
   }
-  .nav_logo{
-    background: url(../assert/week2/logo.png) no-repeat top;
-    background-size: 74%;
-    height:180px;
-    width: 100%;
+  .nav_message{
+    color: black;
+    font-size: 10pt;
+    padding-left:18px;
+  }
+  .nav_message p{
+    line-height: 2;
+  }
+  .nav_message .title{
+    font-size: 12pt;
+    border-bottom: 1px dashed;
+    padding-bottom: 7px;
+    margin-top: 61px;
+  }
+  .nav_message button{
+    height: 36px;
+    border-radius:8px;
+    font-size: 7pt;
+    font-family: monospace;
+    color:#34ac98;
+    padding: 10px;
   }
 
   /* banner part */
@@ -588,23 +572,10 @@ footer li:nth-child(3){
     font-size: 9pt;
   }
 
-  /* signup part*/
-  .signup_nav{
-    display: table;
-    margin: 0 auto;
-    width: 100%;
-  }
+  /* signup part */
   .signup_nav div{
-    border-left: 1px solid #fafafa;
-    display: table-cell;
-    width: 25%;
     text-align: left;
-    color: #34ac98;
     padding:30px 22px;
-    background-color: #eff8f7;
-  }
-  .signup_nav div:nth-child(2){
-    background-color: #d9efec;
   }
   .signup_nav span{
     font-size: 17pt;
@@ -618,15 +589,13 @@ footer li:nth-child(3){
     display: flex;
     flex-flow: row nowrap;
     margin-top: 35px;
-    border-top: 1px dashed black;
-    border-bottom: 1px dashed black;
   }
   .signup_email_icon{
     background:url(../assert/week2/email.png) no-repeat top;
     background-size: 50%;
     width: 12%;
   }
-  .signup_message {
+  .signup_message{
     font-size: 11pt;
     width: 80%;
   }
@@ -683,7 +652,6 @@ footer li:nth-child(3){
     background-size: 90%;
     border: 0.1px solid #e4e0e0;
   }
-
   .story_msm{
     margin: 16px 0;
     padding: 0;
