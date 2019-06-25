@@ -492,7 +492,7 @@ footer li:nth-child(3){
   }
   .nav_logo{
     background: url(../assert/week2/logo.png) no-repeat top;
-    background-size: 70%;
+    background-size: 65%;
     width: 100%;
     height: 35%;
   }
@@ -619,7 +619,7 @@ footer li:nth-child(3){
   }
   .signup_email_icon{
     background:url(../assert/week2/email.png) no-repeat top;
-    background-size: 50%;
+    background-size: 45%;
     width: 12%;
   }
   .signup_message{
