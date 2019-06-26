@@ -21,7 +21,7 @@ header ul{
 }
 .nav_logo img{
   width: 40%;
-  height: auto;
+  height: 100%;
 }
 .nav_link a{
   color:#34ac98;
@@ -107,7 +107,7 @@ header ul{
 }
 .signup_email_icon img{
   width: 80%;
-  height: auto;
+  height: 100%;
 }
 .signup_email{
   padding-top: 10px;
@@ -136,7 +136,7 @@ header ul{
 }
 .article_image img{
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .article_detail .title{
   font-size: 12pt;
@@ -290,7 +290,7 @@ footer li:nth-child(3){
   }
   .nav_logo img{
     width: 40%;
-    height: auto;
+    height: 100%;
   }
   .nav_list{
     width: 70%;
@@ -304,7 +304,7 @@ footer li:nth-child(3){
   }
   .nav_icon img{
     width: 45%;
-    height: auto;
+    height: 100%;
   }
 
 /* banner part */
@@ -422,7 +422,7 @@ footer li:nth-child(3){
   }
   .nav_logo img{
     width: 70%;
-    height: auto;
+    height: 100%;
   }
   .nav_list{
     display: flex;
