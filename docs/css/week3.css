@@ -1,3 +1,550 @@
-h1 {
-  color: grey;
+*{
+  margin: 0;
 }
+.nav{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background:#4caf50;
+  padding: 10px 20px;
+  width: 100%;
+  height: 50px;
+}
+.nav_logo{
+  flex: 1 0 auto;
+  text-align: center;
+}
+.nav_logo img{
+  max-width: 50%;
+  height: auto;
+}
+.nav_list{
+  flex: 2 0 auto;
+}
+.nav_list_navlist{
+  list-style-type: none;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 95%;
+  padding: 0;
+}
+.nav_list_navlist li{
+  display:flex;
+  align-items: center;
+  font-size: 17px;
+  color: whitesmoke;
+  cursor:pointer;
+}
+.nav_list_navlist li:hover{
+  font-size: 18px;
+  border: 2px solid #1a581d;
+  padding: 2px 12px;
+  border-radius: 15px;
+  color:  #1a581d;;
+}
+.aboutUs{
+  background: url(../assert/week3/bg1.jpg) no-repeat center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  opacity: 0.6;
+  animation: myfirst 5s ease-in infinite running reverse;
+  -webkit-animation: myfirst 5s ease-in infinite running reverse;
+}
+
+@keyframes myfirst{
+  /*from{background: url(../assert/week3/bg1.jpg) no-repeat center; left: 0px}*/
+  /*to{background: url(../assert/week3/bg2.jpg) no-repeat center; left: 1440px}*/
+}
+.aboutUs_details{
+  text-align: center;
+  padding: 0 20%;
+  color: black;
+}
+.aboutUs_details span{
+  font-size: 45px;
+  display: block;
+  margin: 30px;
+}
+.aboutUs_details p{
+  font-size: 20px;
+  line-height: 1.5;
+}
+.aboutUs_details button{
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 30px;
+  cursor:pointer;
+}
+.products{
+  margin: 0;
+  background:#f9f9fa;
+}
+.bestSeller{
+  margin: 20px 5% 0 5%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.products_title p, .news_title p, .sales_title p, .suggestions_title p{
+  padding: 30px;
+  text-align: center;
+  font-size: 40px;
+  background-color:#d6efd7;
+}
+.bestSeller_list{
+  padding: 10px 1.5%;
+  max-width: 22%;
+  color:#666666;
+}
+.bestSeller_details{
+  position: relative;
+  border: 6px solid rgb(214, 239, 215);
+}
+.bestSeller_details img{
+  max-width: 100%;
+  height: auto;
+}
+.bestSeller_list:hover .bestSeller_details{
+  display:block; 
+  transform:scale(1.1);
+}
+.bestSeller_content{
+  background:rgba(76, 175, 80);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.bestSeller_list:hover .bestSeller_content{
+  opacity: 0.5;
+}
+.bestSeller_list:hover .bestSeller_products_name{
+  font-size: 23px;
+  color:  #1a581d;
+}
+.bestSeller_content p{
+  color: white;
+  padding: 10px;
+  margin: 0;
+  font-size: 12px;
+}
+.bestSeller_products_name{
+  padding: 25px 0;
+  font-size: 20px;
+}
+.bestSeller_more{
+  text-align: center;
+  padding: 20px 0 40px;
+}
+.bestSeller_more button{
+  border-radius: 10px;
+  border: 2px solid #1a581d;;
+}
+.bestSeller_more a:link{
+  text-decoration: none;
+}
+.bestSeller_more a{
+  color: #666666;
+  font-size: 25px;
+  padding: 2px 10px;
+}
+.bestSeller_more button:hover a{
+  color: #1a581d;
+  letter-spacing:3px;
+}
+
+/* News */
+.news{
+  background-color: #f9f9fa;
+}
+.news_list_details{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 20px 15% 10px 20%;
+}
+.news_list_details_image{
+  width: 35%;
+}
+.news_list_details_message{
+  width: 65%;
+  align-self: center;
+}
+.news_list_details_image img{
+  width: 85%;
+  height: auto;
+  border: 6px solid #82a785;
+}
+.news_list_details_image:hover img{
+  display:block; 
+  transform:scale(1.1);
+}
+.news_list_details_message h6{
+  cursor:pointer;
+  font-size: 20px;
+  color: black;
+}
+.news_list_details_message:hover h6{
+  color: #1a581d;
+  font-size: 23px;
+}
+.news_list_details_msm1{
+  font-size: 18px;
+  padding: 10px 0;
+  color: #666666;
+}
+.news_list_details_time{
+  font-size: 15px;
+  color: #1a581d;
+}
+
+/* Footer */
+footer{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #4caf50;
+}
+.suggestions, .contactUs{
+  width: 50%;
+  padding: 20px 5%;
+  color: white;
+}
+.suggestions p, .contactUs p{
+  font-size: 18px;
+  line-height: 2;
+}
+.suggestions_input{
+  display: block;
+  height: 20px;
+  width: 40%;
+  border: 1px outset;
+}
+#suggestions_details{
+  height: 80px;
+  width: 100%;
+}
+.suggestions button{
+  width: 25%;
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background-color: #1a581d;
+  color: white;
+}
+
+/* Sales */
+.sales{
+  background-color: #f9f9fa;
+}
+.sales_list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  max-width: 100%;
+  margin: 20px;
+}
+.sales_1, .sales_2, .sales_3{
+  width: 25%;
+  margin: 0 2%;
+}
+.sales_list img{
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.sales_details{
+  position: relative;
+}
+.sales_price{  
+  background:rgba(76, 175, 80);
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  left: 0;
+  top: 30%;
+  opacity: 0;
+  text-align: center;
+}
+.sales_price p:first-child{
+  padding-top: 16%;
+}
+.sales_price p{
+  line-height: 1.5;
+  color: white;
+}
+#sales_price_button{
+  text-align: center;
+  margin: 20px 0;
+}
+#sales_price_button button{
+  height: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+#sales_price_button:hover button{
+  background-color: #4caf50;
+  font-size: 20px;
+  border: 2px solid gray;
+}
+.sales_details:hover .sales_price{
+  opacity: 0.8;
+}
+@media screen and (min-width:769px){
+  .nav button{
+    display: none;
+  }
+  .suggestions_title{
+    display: none;
+  }
+}
+
+@media screen and (min-width:481px)and (max-width:768px) {
+  .nav_list{
+    display: none;
+  }
+  .aboutUs_details{
+    text-align: center;
+    padding: 0 10%;
+    color: black;
+  }
+  .aboutUs_details span{
+    font-size: 35px;
+  }
+  .aboutUs_details p{
+    font-size: 18px;
+  }
+  .bestSeller{
+    margin: 20px 8% 0 8%;
+  }
+  .products_title p, .news_title p, .sales_title p, .suggestions_title p{
+    padding: 25px;
+    font-size: 28px;
+  }
+  .bestSeller_list{
+    padding: 10px 3%;
+    max-width: 44%;
+  }
+  .bestSeller_list:hover .bestSeller_products_name{
+    font-size: 20px;
+  }
+  .bestSeller_content p{
+    padding: 5px;
+    font-size: 12px;
+  }
+  .bestSeller_products_name{
+    font-size: 18px;
+  }
+  .bestSeller_list:nth-child(5), .bestSeller_list:nth-child(6), .bestSeller_list:nth-child(7), .bestSeller_list:nth-child(8){
+    display: none;
+  }
+  .bestSeller_more{
+    padding: 15px 0 30px;
+  }
+  .bestSeller_more a{
+    font-size: 20px;
+  }
+  
+  /* News */
+  .news_list_details{
+    padding: 20px 5% 10px 5%;
+    border-bottom: 1px dashed gray;
+  }
+  .news_list_details_image{
+    align-self: center;
+  }
+  .news_list_details_image img{
+    width: 90%;
+    border: none;
+  }
+  .news_list_details_image:hover img{
+    border: 2px solid gray;
+  }
+  .news_list_details_message h6{
+    font-size: 16px;
+  }
+  .news_list_details_message:hover h6{
+    font-size: 18px;
+  }
+  .news_list_details_msm1{
+    font-size: 14px;
+  }
+  .news_list_details_time{
+    font-size: 14px;
+  }
+  
+   /* Footer */
+   footer{
+    flex-flow: column nowrap;
+  }
+  .suggestions{
+    width: 90%;
+    background: #f9f9fa;
+    color: #666666;
+    background-color: #f9f9fa;
+  }
+  .contactUs{
+    width: 90%;
+  }
+  .suggestions p, .contactUs p{
+    font-size: 15px;
+  }
+  /* Sales */
+  .sales_3{
+    display: none;
+  }
+  .sales_list{
+    margin: 20px;
+  }
+  .sales_1, .sales_2, .sales_3{
+    width: 40%;
+    margin: 0 4%;
+  }
+  .sales_price{  
+    height: 100%;
+    top: 0;
+    opacity: 0;
+  }
+  .sales_price p:first-child{
+    padding-top: 45%;
+  }
+}
+
+@media screen and (max-width:480px){
+  .nav_list{
+    display: none;
+  }
+  .aboutUs{
+    opacity: 0.4;
+  }
+  .aboutUs_details{
+    padding: 0 7%;
+  }
+  .aboutUs_details span{
+    font-size: 30px;
+  }
+  .aboutUs_details p{
+    font-size: 17px;
+  }
+  .products_title p, .news_title p, .sales_title p, .suggestions_title p{
+    font-size: 27px;
+    text-align: left;
+  }
+  .bestSeller{
+    margin: 20px 15% 0 15%;
+  }
+  .bestSeller_list{
+    max-width: 100%;
+  }
+  .bestSeller_products_name{
+    font-size: 18px;
+  }
+  .bestSeller_list:hover .bestSeller_products_name{
+    font-size: 20px;
+  }
+  .bestSeller_content p{
+    font-size: 17px;
+  }
+  .bestSeller_list:nth-child(3), .bestSeller_list:nth-child(5), .bestSeller_list:nth-child(6), .bestSeller_list:nth-child(7), .bestSeller_list:nth-child(8){
+    display: none;
+  }
+  .bestSeller_more{
+    padding: 10px 0 20px;
+  }
+  .bestSeller_more a{
+    font-size: 20px;
+  }
+  
+  /* News */
+  .news_list{
+    margin: 0 8%;
+  }
+  .news_list_details{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+  }
+  .news_list_details_image{
+    padding-top: 20px;
+    width: 100%;
+  }
+  .news_list_details_message{
+    width: 100%;
+  }
+  .news_list_details_image img{
+    width: 70%;
+  }
+  .news_list_details_image:hover img{
+    display:inline;
+  }
+  .news_list_details_message h6{
+    padding: 10px;
+    font-size: 18px;
+  }
+  .news_list_details_message:hover h6{
+    font-size: 20px;
+  }
+  .news_list_details_msm1{
+    font-size: 16px;
+  }
+  .news_list_details_time{
+    font-size: 16px;
+    padding: 5px;
+  }
+  .news_list_details:nth-child(3){
+    display: none;
+  }
+  
+  /* Footer */
+  footer{
+    flex-flow: column nowrap;
+  }
+  .suggestions{
+    width: 90%;
+    background: #f9f9fa;
+    color: #666666;
+  }
+  .contactUs{
+    width: 90%;
+  }
+  .suggestions p, .contactUs p{
+    font-size: 15px;
+  }
+  
+  /* Sales */
+  .sales_list{
+    flex-flow: column nowrap;
+    margin:30px 0 0;
+  }
+  .sales_1, .sales_2, .sales_3{
+    width: 100%;
+  }
+  .sales_details{
+    text-align: center;
+  }
+  .sales_list img{
+    max-width: 70%;
+  }
+  .sales_price{  
+    width: 70%;
+    left: 15%;
+  }
+  .sales_2, .sales_3{
+    display: none;
+  }
+}
+
+
